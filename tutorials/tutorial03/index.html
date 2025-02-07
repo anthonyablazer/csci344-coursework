@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/output.css">
+    <title>Tutorial 4: Tailwind</title>
+</head>
+
+<body>
+    <div class="font-Poppins flex flex-col justify-center items-center min-h-screen bg-slate-400">
+        <!-- top-level container (for centering the card)-->
+        <div class="transform motion-safe:hover:scale-105 flex flex-col max-w-[350px] rounded-md shadow-xl bg-white">
+            <!-- card container -->
+            <img class="max-h-[56] object-cover rounded-t-md" src="./assets/burger.jpg" alt="burger dish" />
+            <!-- text container-->
+            <div class="p-4">
+                <h2 class="text-lg mb-1">Burger Tower</h2>
+                <h3 class="text-sm mb-4 txt-sinc-600">4.5 / 5 Stars (413 Reviews)</h3>
+                <p class="txt-xs mb-2">$$ - American, Burgers</p>
+                <p class="text-xs mb-4 text-zinc-600">
+                    Well-known burger franchise serving burgers, fries, and shakes.
+                </p>
+
+                <!-- button container-->
+                <div class="flex gap-x-2">
+                    <button class="btn bg-custom-purple">
+                        <a
+                            href="https://www.bing.com/maps?q=burgers+near+me&qs=ds&form=QBRE&cp=35.587116%7E-82.553053&lvl=12.7">
+                            View Website
+                        </a>
+                    </button>
+                    <button class="btn bg-custom-blue">Order Curbside</button>
+                </div> <!-- end button container-->
+            </div> <!-- end text container-->
+        </div> <!-- end card container -->
+    </div> <!-- end top-level container -->
+</body>
+
+</html>
