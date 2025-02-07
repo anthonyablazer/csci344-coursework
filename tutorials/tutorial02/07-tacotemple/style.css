@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3%;
+}
+
+main {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 50%);
+}
+
+
+
+.card {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding: 3%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center vertically */
+    align-items: left;
+    /* align items in the div (heading and text) left */
+    line-height: 1.5;
+}
+
+.card img {
+    display: block;
+    margin: 0 auto;
+    /* Centers horizontally */
+    max-width: 100%;
+    /* Ensures image fits */
+}

@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(74, 141, 228);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+div {
+    background-color: beige;
+    padding: 1%;
+
+}
+
+section {
+    margin: 2%;
+}
