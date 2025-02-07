@@ -13,3 +13,8 @@ div {
 section {
     margin: 2%;
 }
+
+a {
+    color: black;
+    line-height: 2;
+}
