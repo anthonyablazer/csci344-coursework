@@ -1,0 +1,284 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #F4F4F4;
+    color: #333;
+}
+
+/*Nav Bar*/
+.top-nav {
+    position: sticky;
+    /* Keep sticky position */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /*Keeps nav bar from hovering over other boxes (had that issue)*/
+    border-radius: 8px;
+}
+
+.user-controls {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    margin-right: 15px;
+    font-size: medium;
+
+}
+
+.logout-button {
+    padding: 5px 10px;
+    background-color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout-button:hover {
+    background-color: #e0e0e0;
+    /* Slightly darker on hover */
+}
+
+
+/*Post edits*/
+.post {
+    border: solid 1px #ddd;
+    background-color: white;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-username {
+    font-weight: bold;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.post-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.left-icons i {
+    margin-right: 10px;
+}
+
+.post-likes {
+    margin-bottom: 10px;
+}
+
+.post-caption {
+    margin-bottom: 10px;
+}
+
+.post-comments {
+    margin-bottom: 10px;
+}
+
+.comment {
+    margin-bottom: 5px;
+}
+
+.add-comment {
+    display: flex;
+    align-items: center;
+    border-top: solid 1px #ddd;
+    padding-top: 10px;
+}
+
+.add-comment i {
+    margin-right: 10px;
+}
+
+.add-comment input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.post-link {
+    color: #005fcc;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}
+
+/*Stories edits*/
+.stories {
+    display: flex;
+    justify-content: flex-start;
+    /* Left-justify the stories */
+    align-items: center;
+    padding: 10px 0;
+    overflow-x: auto;
+    /* Allow horizontal scrolling if needed */
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.stories-container {
+    margin-left: 10px;
+    display: flex;
+    gap: 20px;
+    /* Space between stories */
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.story-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.story-username {
+    font-size: 0.9em;
+    color: #333;
+}
+
+/*Suggestions edits*/
+
+.suggestions-panel {
+    position: fixed;
+    top: 120px;
+    left: 65vw;
+    background-color: rgb(252, 252, 252);
+    min-height: 80vh;
+    width: 32vw;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+/* Profile Pics */
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.main-profile-pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.suggestions-list {
+    display: grid;
+    grid-template-columns: 80px auto 80px;
+    gap: 30px;
+}
+
+.suggestion-container {
+    display: contents;
+    align-items: center;
+}
+
+.suggestion-info {
+    margin-left: 10px;
+}
+
+.suggested-text {
+    display: block;
+    font-size: 0.8em;
+    color: #8b8989;
+    font-weight: 600;
+}
+
+.follow-link {
+    color: #005fcc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.follow-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Main (Posts) Body */
+main {
+    width: 60vw;
+    margin-top: 23px;
+    margin-left: 2vw;
+}
+
+/*Media contraint*/
+@media (max-width: 800px) {
+
+    .suggestions-panel {
+        display: none;
+    }
+
+    main {
+        width: auto;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+}
+
+/* extra styles */
+/* Apply the Comfortaa font to all headings */
+h1,
+.main-username,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Comfortaa', cursive;
+}

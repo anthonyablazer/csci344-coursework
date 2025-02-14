@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>HW02 Starter Code</title>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <header class="top-nav">
+        <h1 class="logo">
+            My App
+        </h1>
+        <nav>
+            <div class="user-controls">
+                <h4 class="username">gibsonjack</h4>
+                <button class="logout-button">Log Out</button>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--Main Stuff-->
+    <main>
+
+        <!--Suggestions Panel-->
+        <aside class="suggestions-panel">
+            <header>
+                <div class="user-profile">
+                    <img src="https://picsum.photos/50" alt="User Profile" class="main-profile-pic">
+                    <span class="main-username">gibsonjack</span>
+                </div>
+            </header>
+            <section>
+                <span class="suggested-text" style="margin-bottom: 30px; font-size: 20px; margin-top: 30px;">
+                    Suggestions for you</span>
+                <div class="suggestions-list">
+                    <div class="suggestion-container">
+                        <img src="https://picsum.photos/50?random=1" alt="Suggested User 1" class="profile-pic">
+                        <div class="suggestion-info">
+                            <strong class="username">amandahudson</strong>
+                            <span class="suggested-text">suggested for you</span>
+                        </div>
+                        <a href="#" class="follow-link">Follow</a>
+                    </div>
+                    <!-- Repeat the above block for each suggested account -->
+                    <div class="suggestion-container">
+                        <img src="https://picsum.photos/50?random=2" alt="Suggested User 2" class="profile-pic">
+                        <div class="suggestion-info">
+                            <strong class="username">why-nelson</strong>
+                            <span class="suggested-text">suggested for you</span>
+                        </div>
+                        <a href="#" class="follow-link">Follow</a>
+                    </div>
+                    <!-- Add more suggested accounts as needed -->
+                    <div class="suggestion-container">
+                        <img src="https://picsum.photos/50?random=1" alt="Suggested User 3" class="profile-pic">
+                        <div class="suggestion-info">
+                            <strong class="username">qthornton</strong>
+                            <span class="suggested-text">suggested for you</span>
+                        </div>
+                        <a href="#" class="follow-link">Follow</a>
+                    </div>
+                    <div class="suggestion-container">
+                        <img src="https://picsum.photos/50?random=1" alt="Suggested User 4" class="profile-pic">
+                        <div class="suggestion-info">
+                            <strong class="username">laura-lie-ons</strong>
+                            <span class="suggested-text">suggested for you</span>
+                        </div>
+                        <a href="#" class="follow-link">Follow</a>
+                    </div>
+                    <div class="suggestion-container">
+                        <img src="https://picsum.photos/50?random=1" alt="Suggested User 5" class="profile-pic">
+                        <div class="suggestion-info">
+                            <strong class="username">roberts.on.christen</strong>
+                            <span class="suggested-text">suggested for you</span>
+                        </div>
+                        <a href="#" class="follow-link">Follow</a>
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <!--Feed panel-->
+        <section class="news-feed">
+
+            <!--Stories-->
+            <header class="stories">
+                <div class="stories-container">
+                    <div class="story">
+                        <img src="https://picsum.photos/50?random=11" alt="Story User 1" class="story-pic">
+                        <span class="story-username">User1</span>
+                    </div>
+                    <div class="story">
+                        <img src="https://picsum.photos/50?random=12" alt="Story User 2" class="story-pic">
+                        <span class="story-username">User2</span>
+                    </div>
+                    <div class="story">
+                        <img src="https://picsum.photos/50?random=13" alt="Story User 3" class="story-pic">
+                        <span class="story-username">User3</span>
+                    </div>
+                    <div class="story">
+                        <img src="https://picsum.photos/50?random=14" alt="Story User 4" class="story-pic">
+                        <span class="story-username">User4</span>
+                    </div>
+                    <div class="story">
+                        <img src="https://picsum.photos/50?random=15" alt="Story User 5" class="story-pic">
+                        <span class="story-username">User5</span>
+                    </div>
+                </div>
+            </header>
+
+
+            <!--Posts-->
+            <section class="post">
+                <div class="post-header">
+                    <h2 class="post-username">gibsonjack</h2>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <img src="https://picsum.photos/500?random=21" alt="Post Image" class="post-image">
+                <div class="post-icons">
+                    <div class="left-icons">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment"></i>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+                    <i class="far fa-bookmark"></i>
+                </div>
+                <div class="post-likes">
+                    <strong>30 likes</strong>
+                </div>
+                <div class="post-caption">
+                    <strong>gibsonjack/strong> This is a caption for the post. <a href="#">more</a>
+                </div>
+                <div class="post-comments">
+                    <div class="comment">
+                        <strong>Commenter1</strong> Nice post!
+                    </div>
+                    <div class="comment">
+                        <strong>Commenter2</strong> Love this!
+                    </div>
+                </div>
+                <div class="add-comment">
+                    <i class="far fa-smile"></i>
+                    <input type="text" placeholder="Add a comment...">
+                    <a href="#" class="post-link">Post</a>
+                </div>
+            </section>
+
+            <!--Post 2-->
+            <section class="post">
+                <div class="post-header">
+                    <h2 class="post-username">anthonyblazer</h2>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <img src="https://picsum.photos/500?random=50" alt="Post Image" class="post-image">
+                <div class="post-icons">
+                    <div class="left-icons">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment"></i>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+                    <i class="far fa-bookmark"></i>
+                </div>
+                <div class="post-likes">
+                    <strong>123 likes</strong>
+                </div>
+                <div class="post-caption">
+                    <strong>anthonyblazer</strong> My first post! <a href="#">more</a>
+                </div>
+                <div class="post-comments">
+                    <div class="comment">
+                        <strong>Commenter1</strong> Love it!
+                    </div>
+                    <div class="comment">
+                        <strong>Commenter2</strong> What is that?
+                    </div>
+                </div>
+                <div class="add-comment">
+                    <i class="far fa-smile"></i>
+                    <input type="text" placeholder="Add a comment...">
+                    <a href="#" class="post-link">Post</a>
+                </div>
+            </section>
+
+            <!--Post 3-->
+            <section class="post">
+                <div class="post-header">
+                    <h2 class="post-username">anotherhuman</h2>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <img src="https://picsum.photos/500?random=2" alt="Post Image" class="post-image">
+                <div class="post-icons">
+                    <div class="left-icons">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment"></i>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+                    <i class="far fa-bookmark"></i>
+                </div>
+                <div class="post-likes">
+                    <strong>123 likes</strong>
+                </div>
+                <div class="post-caption">
+                    <strong>anotherhuman</strong> Look what I saw today! <a href="#">more</a>
+                </div>
+                <div class="post-comments">
+                    <div class="comment">
+                        <strong>Commenter1</strong> WOW!
+                    </div>
+                    <div class="comment">
+                        <strong>Commenter2</strong> Did you finish the homework?
+                    </div>
+                </div>
+                <div class="add-comment">
+                    <i class="far fa-smile"></i>
+                    <input type="text" placeholder="Add a comment...">
+                    <a href="#" class="post-link">Post</a>
+                </div>
+            </section>
+
+            <!--Post 4-->
+            <section class="post">
+                <div class="post-header">
+                    <h2 class="post-username">johndoe</h2>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <img src="https://picsum.photos/500?random=22" alt="Post Image" class="post-image">
+                <div class="post-icons">
+                    <div class="left-icons">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment"></i>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+                    <i class="far fa-bookmark"></i>
+                </div>
+                <div class="post-likes">
+                    <strong>123 likes</strong>
+                </div>
+                <div class="post-caption">
+                    <strong>johndoe</strong> Look at this person/place/thing ! <a href="#">more</a>
+                </div>
+                <div class="post-comments">
+                    <div class="comment">
+                        <strong>Commenter1</strong> Neat
+                    </div>
+                    <div class="comment">
+                        <strong>Commenter2</strong> Are you free this weekend?
+                    </div>
+                </div>
+                <div class="add-comment">
+                    <i class="far fa-smile"></i>
+                    <input type="text" placeholder="Add a comment...">
+                    <a href="#" class="post-link">Post</a>
+                </div>
+            </section>
+
+            <!--Post 5-->
+            <section class="post">
+                <div class="post-header">
+                    <h2 class="post-username">anotheranotherperson</h2>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <img src="https://picsum.photos/500?random=44" alt="Post Image" class="post-image">
+                <div class="post-icons">
+                    <div class="left-icons">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment"></i>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+                    <i class="far fa-bookmark"></i>
+                </div>
+                <div class="post-likes">
+                    <strong>3.2M likes</strong>
+                </div>
+                <div class="post-caption">
+                    <strong>anotheranotherperson</strong> Post. <a href="#">more</a>
+                </div>
+                <div class="post-comments">
+                    <div class="comment">
+                        <strong>Commenter1</strong> Very intriguing!
+                    </div>
+                    <div class="comment">
+                        <strong>Commenter2</strong> amosc?
+                    </div>
+                </div>
+                <div class="add-comment">
+                    <i class="far fa-smile"></i>
+                    <input type="text" placeholder="Add a comment...">
+                    <a href="#" class="post-link">Post</a>
+                </div>
+            </section>
+    </main>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">>
+
+<head>
+
+    <title>My App</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+    <header class="top-nav">
+        (header tag)
+        <h1 class="logo">
+            Lovo goes header
+        </h1>
+        <nav>
+            Navigation goes here
+        </nav>
+    </header>
+
+
+    <main> (main tag)
+
+        <aside class="suggestions-panel"> (aside tag)
+            <header>Username stuff</header>
+            <section>Suggestions For You</section>
+        </aside>
+
+        <section class="News-Feed">
+            (section tag)
+            <header class="stories">
+                Stories panel
+            </header>
+            <section class="post">
+                Post 1
+            </section>
+            <section class="post">
+                Post 2
+            </section>
+        </section>
+    </main>
+
+</body>
+<html>
+-->
