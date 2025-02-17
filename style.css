@@ -4,13 +4,9 @@ body {
     padding-right: 5%;
 }
 
-div {
-    background-color: beige;
-    padding: 1%;
-
-}
-
 section {
+    background-color: beige;
+    padding: 3%;
     margin: 2%;
 }
 
